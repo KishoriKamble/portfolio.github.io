@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Contact Me</title>
+    <style>
+        legend{
+            font-size: 30px;
+        }
+        label{
+            font-size: 20px;
+        }
+        form{
+            background-color:#f1d4e5;
+        }
+        button{
+            background-color: #e893cf;
+        }
+        .required::after{
+            content:"*";
+            color: red;
+        }
+    </style>
+</head>
+<body bgcolor=" #78c1f3">
+    <fieldset>
+        <legend>Please fill the form to contact me</legend>
+        <form action="">
+            <label class="required "for="fname">Full Name</label>
+            <input type="text" required id="fname" class="fname" pattern="[A-Za-z]{20}"><br><br>
+            <label class="required for="mnumber">Mobile number</label>
+            <input type="number" id="mnumber" class="mnumber" required><br><br>
+            <label class="required for="email">Email ID</label>
+            <input type="email" id="email" class="email" required><br><br>
+            <label for="cname">Company Name</label>
+            <input type="text" id="cname" class="cname" required><br><br>
+            <button>Submit</button>
+        </form>
+    </fieldset>
+</body>
+</html>
